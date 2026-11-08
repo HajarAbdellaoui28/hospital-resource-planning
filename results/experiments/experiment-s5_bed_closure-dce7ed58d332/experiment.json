@@ -1,0 +1,27 @@
+{
+  "experiment_id": "experiment-s5_bed_closure-dce7ed58d332",
+  "created_at": "2026-11-08T19:23:57.932400+00:00",
+  "scenario": {
+    "scenario_id": "S5_BED_CLOSURE",
+    "description": "Réduction synthétique de 10 % des capacités opérationnelles.",
+    "demand_multiplier": 1.0,
+    "absence_rate": 0.0,
+    "capacity_reduction": 0.1,
+    "service_multipliers": {},
+    "peak_days": null
+  },
+  "seed": 42,
+  "scenario_input_hash": "dce7ed58d332059980dbba8f7ac9df4bae05178c152e895a2464302997c684c2",
+  "methods": [
+    "cp_sat"
+  ],
+  "method_artifacts": {
+    "cp_sat": {
+      "bed_allocations": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\method_result.json"
+    }
+  }
+}

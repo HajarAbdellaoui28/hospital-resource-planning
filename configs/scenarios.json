@@ -1,0 +1,48 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "S0_BASELINE",
+      "description": "Demande nominale sans absence ni fermeture supplémentaire.",
+      "demand_multiplier": 1.0,
+      "absence_rate": 0.0,
+      "capacity_reduction": 0.0
+    },
+    {
+      "scenario_id": "S1_URGENT_PEAK",
+      "description": "Hausse de 50 % des admissions URG pendant les deux premiers jours.",
+      "demand_multiplier": 1.0,
+      "absence_rate": 0.0,
+      "capacity_reduction": 0.0,
+      "service_multipliers": {"URG": 1.5},
+      "peak_days": 2
+    },
+    {
+      "scenario_id": "S2_GENERAL_SURGE",
+      "description": "Hausse générale de 25 % de la demande.",
+      "demand_multiplier": 1.25,
+      "absence_rate": 0.0,
+      "capacity_reduction": 0.0
+    },
+    {
+      "scenario_id": "S3_STAFF_ABSENCE",
+      "description": "Indisponibilité supplémentaire de 15 % des professionnels disponibles.",
+      "demand_multiplier": 1.0,
+      "absence_rate": 0.15,
+      "capacity_reduction": 0.0
+    },
+    {
+      "scenario_id": "S4_COMBINED_CRISIS",
+      "description": "Hausse générale de 25 % combinée à 15 % d'absences supplémentaires.",
+      "demand_multiplier": 1.25,
+      "absence_rate": 0.15,
+      "capacity_reduction": 0.0
+    },
+    {
+      "scenario_id": "S5_BED_CLOSURE",
+      "description": "Réduction synthétique de 10 % des capacités opérationnelles.",
+      "demand_multiplier": 1.0,
+      "absence_rate": 0.0,
+      "capacity_reduction": 0.1
+    }
+  ]
+}

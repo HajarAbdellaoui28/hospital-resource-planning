@@ -1,0 +1,27 @@
+{
+  "experiment_id": "experiment-s3_staff_absence-2d0da06b3a16",
+  "created_at": "2026-11-06T21:28:54.573100+00:00",
+  "scenario": {
+    "scenario_id": "S3_STAFF_ABSENCE",
+    "description": "Indisponibilité supplémentaire de 15 % des professionnels disponibles.",
+    "demand_multiplier": 1.0,
+    "absence_rate": 0.15,
+    "capacity_reduction": 0.0,
+    "service_multipliers": {},
+    "peak_days": null
+  },
+  "seed": 42,
+  "scenario_input_hash": "2d0da06b3a16e694ef95b854da6d078d1b112f93d986191167fbbf32280b23dd",
+  "methods": [
+    "greedy"
+  ],
+  "method_artifacts": {
+    "greedy": {
+      "bed_allocations": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\method_result.json"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "experiment_id": "cp_sat-instance-forecast-20251230-s0-s5_bed_closure",
+  "scenario_id": "S5_BED_CLOSURE",
+  "method_name": "cp_sat",
+  "status": "FEASIBLE",
+  "runtime_seconds": 34.70515749999322,
+  "objective_value": 674469.0,
+  "objective_components": {
+    "opened_bed_cost": 17460.0,
+    "unmet_patient_day_cost": 109000.0,
+    "staff_target_shortage_cost": 548000.0,
+    "workload_imbalance_cost": 9.0,
+    "total_cost": 674469.0
+  },
+  "optimality_gap": 0.09107757361717143,
+  "unmet_demand_patient_days": 109,
+  "rejected_admissions": 26,
+  "staff_shortage_total": 1096,
+  "coverage_rate": 0.9412398921832884,
+  "beds_opened_total": 1746,
+  "fairness_metric": 9.0,
+  "seed": 42,
+  "config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c",
+  "validation": {
+    "valid": true,
+    "hard_constraint_violations": 0,
+    "capacity_violations": 0,
+    "availability_violations": 0,
+    "qualification_violations": 0,
+    "double_assignment_violations": 0,
+    "coverage_deficits": 1096,
+    "workload_range": 9,
+    "messages": [
+      "Déficit cumulé de cible de personnel : 1096 poste(s)."
+    ]
+  },
+  "assignments_artifact_path": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\staff_assignments.csv",
+  "allocations_artifact_path": "results\\experiments\\experiment-s5_bed_closure-dce7ed58d332\\cp_sat\\bed_allocations.csv",
+  "native_status": "FEASIBLE",
+  "error_message": null
+}

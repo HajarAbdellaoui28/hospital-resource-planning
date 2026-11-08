@@ -1,0 +1,27 @@
+{
+  "experiment_id": "experiment-s2_general_surge-96fb86f9a355",
+  "created_at": "2026-11-06T21:31:05.280767+00:00",
+  "scenario": {
+    "scenario_id": "S2_GENERAL_SURGE",
+    "description": "Hausse générale de 25 % de la demande.",
+    "demand_multiplier": 1.25,
+    "absence_rate": 0.0,
+    "capacity_reduction": 0.0,
+    "service_multipliers": {},
+    "peak_days": null
+  },
+  "seed": 42,
+  "scenario_input_hash": "96fb86f9a355c294a7d1c888f6d74c10b1efd4bcba1303175cf9f9f05e9ccd0b",
+  "methods": [
+    "greedy"
+  ],
+  "method_artifacts": {
+    "greedy": {
+      "bed_allocations": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\method_result.json"
+    }
+  }
+}

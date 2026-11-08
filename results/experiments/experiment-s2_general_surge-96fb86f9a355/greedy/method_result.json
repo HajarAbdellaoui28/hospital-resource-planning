@@ -1,0 +1,41 @@
+{
+  "experiment_id": "greedy-instance-forecast-20251230-s0-s2_general_surge",
+  "scenario_id": "S2_GENERAL_SURGE",
+  "method_name": "greedy",
+  "status": "FEASIBLE",
+  "runtime_seconds": 0.637153,
+  "objective_value": 924327.0,
+  "objective_components": {
+    "opened_bed_cost": 20320.0,
+    "unmet_patient_day_cost": 200000.0,
+    "staff_target_shortage_cost": 704000.0,
+    "workload_imbalance_cost": 7.0,
+    "total_cost": 924327.0
+  },
+  "optimality_gap": null,
+  "unmet_demand_patient_days": 200,
+  "rejected_admissions": 73,
+  "staff_shortage_total": 1408,
+  "coverage_rate": 0.910394265232975,
+  "beds_opened_total": 2032,
+  "fairness_metric": 7.0,
+  "seed": 42,
+  "config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c",
+  "validation": {
+    "valid": true,
+    "hard_constraint_violations": 0,
+    "capacity_violations": 0,
+    "availability_violations": 0,
+    "qualification_violations": 0,
+    "double_assignment_violations": 0,
+    "coverage_deficits": 1408,
+    "workload_range": 7,
+    "messages": [
+      "Déficit cumulé de cible de personnel : 1408 poste(s)."
+    ]
+  },
+  "assignments_artifact_path": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\staff_assignments.csv",
+  "allocations_artifact_path": "results\\experiments\\experiment-s2_general_surge-96fb86f9a355\\greedy\\bed_allocations.csv",
+  "native_status": "GREEDY_COMPLETE",
+  "error_message": null
+}

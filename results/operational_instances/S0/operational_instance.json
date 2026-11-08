@@ -1,0 +1,25 @@
+{
+  "instance": {
+    "instance_id": "instance-forecast-20251230-s0",
+    "scenario_id": "S0",
+    "forecast": {
+      "forecast_run_id": "forecast-20251230",
+      "origin_date": "2025-12-30",
+      "horizon_days": 7,
+      "artifact_path": "results\\forecasts\\forecast_results.csv",
+      "config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c"
+    },
+    "input_hash": "dcc34db1ffdbb6cfdb1499571ccda82badc6d007d5a76c5b94d9e02bca3ac163",
+    "created_at": "2026-11-06T19:09:50.550358Z"
+  },
+  "units": {
+    "yhat": "patients/jour (continu)",
+    "requested_admissions": "patients/jour (entier, plafond de yhat)",
+    "occupancy_required": "patients ou lits occupés en fin de journée",
+    "beds_required": "lits/jour",
+    "capacity_gap": "lits/jour",
+    "required_staff": "professionnels/poste"
+  },
+  "capacity_assumption": "Les capacités futures utilisent beds_total configuré ; les fermetures aléatoires ne sont pas connues à l'avance.",
+  "conversion_assumption": "requested_admissions = ceil(yhat), borné à zéro."
+}

@@ -1,0 +1,49 @@
+{
+  "valid": true,
+  "row_counts": {
+    "historical_demand": 4380,
+    "bed_capacity": 4380,
+    "occupancy": 4380,
+    "staff": 235,
+    "staff_availability": 771975,
+    "staff_requirements": 39420
+  },
+  "date_min": "2023-01-01",
+  "date_max": "2025-12-30",
+  "missing_values": {
+    "historical_demand": 3285,
+    "bed_capacity": 0,
+    "occupancy": 0,
+    "staff": 0,
+    "staff_availability": 748883,
+    "staff_requirements": 0
+  },
+  "duplicate_rows": {
+    "historical_demand": 0,
+    "bed_capacity": 0,
+    "occupancy": 0,
+    "staff": 0,
+    "staff_availability": 0,
+    "staff_requirements": 0
+  },
+  "service_statistics": {
+    "CHI": {
+      "admissions_mean": 12.36255707762557,
+      "admissions_std": 5.128937052434747
+    },
+    "MED": {
+      "admissions_mean": 18.30228310502283,
+      "admissions_std": 4.1909823057339235
+    },
+    "REA": {
+      "admissions_mean": 5.602739726027397,
+      "admissions_std": 2.500811152574687
+    },
+    "URG": {
+      "admissions_mean": 33.22283105022831,
+      "admissions_std": 6.294132167957048
+    }
+  },
+  "invalid_value_count": 0,
+  "issues": []
+}

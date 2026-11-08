@@ -1,0 +1,29 @@
+{
+  "experiment_id": "experiment-s1_urgent_peak-73744d59852f",
+  "created_at": "2026-11-08T18:31:36.079339+00:00",
+  "scenario": {
+    "scenario_id": "S1_URGENT_PEAK",
+    "description": "Hausse de 50 % des admissions URG pendant les deux premiers jours.",
+    "demand_multiplier": 1.0,
+    "absence_rate": 0.0,
+    "capacity_reduction": 0.0,
+    "service_multipliers": {
+      "URG": 1.5
+    },
+    "peak_days": 2
+  },
+  "seed": 42,
+  "scenario_input_hash": "73744d59852f04878f8f9813c88bd67af127cdcdcefbd8df336ccc033247eaa6",
+  "methods": [
+    "milp"
+  ],
+  "method_artifacts": {
+    "milp": {
+      "bed_allocations": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\method_result.json"
+    }
+  }
+}

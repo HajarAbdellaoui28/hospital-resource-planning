@@ -1,0 +1,88 @@
+{
+  "hospital_name": "Synthetic Regional Hospital",
+  "planning_horizon_days": 7,
+  "historical_days": 1095,
+  "random_seed": 42,
+  "services": {
+    "URG": {
+      "beds_total": 75,
+      "base_daily_admissions": 30,
+      "priority": 1,
+      "weekday_effects": [2, 1, 0, 0, 1, 3, 4],
+      "trend_per_day": 0.002,
+      "special_event_effect": 10,
+      "length_of_stay_days": 2
+    },
+    "MED": {
+      "beds_total": 106,
+      "base_daily_admissions": 18,
+      "priority": 3,
+      "weekday_effects": [1, 1, 0, 0, 0, -2, -2],
+      "trend_per_day": 0.001,
+      "special_event_effect": 2,
+      "length_of_stay_days": 5
+    },
+    "REA": {
+      "beds_total": 55,
+      "base_daily_admissions": 5,
+      "priority": 0,
+      "weekday_effects": [0, 0, 0, 0, 0, 1, 1],
+      "trend_per_day": 0.0005,
+      "special_event_effect": 3,
+      "length_of_stay_days": 8
+    },
+    "CHI": {
+      "beds_total": 64,
+      "base_daily_admissions": 12,
+      "priority": 2,
+      "weekday_effects": [3, 3, 2, 2, 1, -6, -7],
+      "trend_per_day": 0.001,
+      "special_event_effect": 1,
+      "length_of_stay_days": 4
+    }
+  },
+  "shifts": [
+    {"code": "MORNING", "start_hour": 7, "duration_hours": 8},
+    {"code": "EVENING", "start_hour": 15, "duration_hours": 8},
+    {"code": "NIGHT", "start_hour": 23, "duration_hours": 8}
+  ],
+  "roles": ["PHYSICIAN", "NURSE", "CARE_ASSISTANT"],
+  "synthetic_data": {
+    "start_date": "2023-01-01",
+    "special_event_probability": 0.03,
+    "holiday_month_days": ["01-01", "05-01", "07-30", "11-18"],
+    "bed_closure_probability": 0.05,
+    "max_bed_closure_fraction": 0.1,
+    "absence_probability": 0.03,
+    "staff_by_role": {
+      "PHYSICIAN": 50,
+      "NURSE": 110,
+      "CARE_ASSISTANT": 75
+    },
+    "contracted_hours": 40,
+    "max_shifts": 5,
+    "staff_per_ten_beds": {
+      "PHYSICIAN": 1,
+      "NURSE": 2,
+      "CARE_ASSISTANT": 1
+    },
+    "minimum_staff_by_role": {
+      "PHYSICIAN": 1,
+      "NURSE": 1,
+      "CARE_ASSISTANT": 1
+    }
+  },
+  "planning_policy": {
+    "mode": "shortage_permitting",
+    "min_rest_hours": 11,
+    "max_consecutive_nights": 3,
+    "solver_time_limit_seconds": 30,
+    "solver_num_workers": 1
+  },
+  "objective_weights": {
+    "opened_bed": 10,
+    "unmet_patient_day": 1000,
+    "staff_target_shortage": 500,
+    "workload_imbalance": 1
+  }
+}

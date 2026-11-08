@@ -1,0 +1,41 @@
+{
+  "experiment_id": "milp-instance-forecast-20251230-s0-s1_urgent_peak",
+  "scenario_id": "S1_URGENT_PEAK",
+  "method_name": "milp",
+  "status": "FEASIBLE",
+  "runtime_seconds": 35.61299309995957,
+  "objective_value": 695559.0,
+  "objective_components": {
+    "opened_bed_cost": 18550.0,
+    "unmet_patient_day_cost": 68000.0,
+    "staff_target_shortage_cost": 609000.0,
+    "workload_imbalance_cost": 9.0,
+    "total_cost": 695559.0
+  },
+  "optimality_gap": null,
+  "unmet_demand_patient_days": 68,
+  "rejected_admissions": 29,
+  "staff_shortage_total": 1218,
+  "coverage_rate": 0.9646385855434217,
+  "beds_opened_total": 1855,
+  "fairness_metric": 9.0,
+  "seed": 42,
+  "config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c",
+  "validation": {
+    "valid": true,
+    "hard_constraint_violations": 0,
+    "capacity_violations": 0,
+    "availability_violations": 0,
+    "qualification_violations": 0,
+    "double_assignment_violations": 0,
+    "coverage_deficits": 1218,
+    "workload_range": 9,
+    "messages": [
+      "Déficit cumulé de cible de personnel : 1218 poste(s)."
+    ]
+  },
+  "assignments_artifact_path": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\staff_assignments.csv",
+  "allocations_artifact_path": "results\\experiments\\experiment-s1_urgent_peak-73744d59852f\\milp\\bed_allocations.csv",
+  "native_status": "TimeLimit",
+  "error_message": null
+}

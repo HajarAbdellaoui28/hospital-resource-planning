@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hospital-resource-planning"
+version = "0.1.0"
+description = "Prototype synthétique d'aide à la décision pour la planification hospitalière."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.111,<1",
+  "numpy>=1.26,<3",
+  "ortools>=9.10,<10",
+  "pandas>=2.2,<3",
+  "pydantic>=2.7,<3",
+  "pulp[cbc]>=4.0,<5",
+  "scikit-learn>=1.5,<2",
+  "statsmodels>=0.14,<1",
+  "uvicorn[standard]>=0.30,<1",
+]
+
+[dependency-groups]
+dev = ["httpx>=0.27,<1", "pytest>=8.2,<9", "pytest-cov>=5,<7", "ruff>=0.6,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hospital_planning"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

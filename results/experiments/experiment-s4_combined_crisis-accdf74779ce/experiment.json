@@ -1,0 +1,27 @@
+{
+  "experiment_id": "experiment-s4_combined_crisis-accdf74779ce",
+  "created_at": "2026-11-06T21:31:07.620418+00:00",
+  "scenario": {
+    "scenario_id": "S4_COMBINED_CRISIS",
+    "description": "Hausse générale de 25 % combinée à 15 % d'absences supplémentaires.",
+    "demand_multiplier": 1.25,
+    "absence_rate": 0.15,
+    "capacity_reduction": 0.0,
+    "service_multipliers": {},
+    "peak_days": null
+  },
+  "seed": 42,
+  "scenario_input_hash": "accdf74779ce16cf2c035a70e62cadecc4639656c5679bbd987c427b7b17c93c",
+  "methods": [
+    "greedy"
+  ],
+  "method_artifacts": {
+    "greedy": {
+      "bed_allocations": "results\\experiments\\experiment-s4_combined_crisis-accdf74779ce\\greedy\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s4_combined_crisis-accdf74779ce\\greedy\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s4_combined_crisis-accdf74779ce\\greedy\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s4_combined_crisis-accdf74779ce\\greedy\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s4_combined_crisis-accdf74779ce\\greedy\\method_result.json"
+    }
+  }
+}

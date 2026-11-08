@@ -1,0 +1,41 @@
+{
+  "experiment_id": "greedy-instance-forecast-20251230-s0-s3_staff_absence",
+  "scenario_id": "S3_STAFF_ABSENCE",
+  "method_name": "greedy",
+  "status": "FEASIBLE",
+  "runtime_seconds": 0.934136,
+  "objective_value": 636879.0,
+  "objective_components": {
+    "opened_bed_cost": 18370.0,
+    "unmet_patient_day_cost": 18000.0,
+    "staff_target_shortage_cost": 600500.0,
+    "workload_imbalance_cost": 9.0,
+    "total_cost": 636879.0
+  },
+  "optimality_gap": null,
+  "unmet_demand_patient_days": 18,
+  "rejected_admissions": 4,
+  "staff_shortage_total": 1201,
+  "coverage_rate": 0.9902964959568733,
+  "beds_opened_total": 1837,
+  "fairness_metric": 9.0,
+  "seed": 42,
+  "config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c",
+  "validation": {
+    "valid": true,
+    "hard_constraint_violations": 0,
+    "capacity_violations": 0,
+    "availability_violations": 0,
+    "qualification_violations": 0,
+    "double_assignment_violations": 0,
+    "coverage_deficits": 1201,
+    "workload_range": 9,
+    "messages": [
+      "Déficit cumulé de cible de personnel : 1201 poste(s)."
+    ]
+  },
+  "assignments_artifact_path": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\staff_assignments.csv",
+  "allocations_artifact_path": "results\\experiments\\experiment-s3_staff_absence-2d0da06b3a16\\greedy\\bed_allocations.csv",
+  "native_status": "GREEDY_COMPLETE",
+  "error_message": null
+}

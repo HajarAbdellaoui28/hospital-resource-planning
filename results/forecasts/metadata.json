@@ -1,0 +1,16 @@
+{
+  "forecast_run_id": "forecast-20251230",
+  "created_at": "2026-11-01T19:38:00.607137+00:00",
+  "horizon_days": 7,
+  "validation_origins": 12,
+  "final_test_origins": 4,
+  "models": [
+    "naive",
+    "seasonal_naive",
+    "moving_average",
+    "exponential_smoothing",
+    "lagged_regression"
+  ],
+  "services": 4,
+  "demand_config_hash": "1b87b2b31569f5c5b276e606ae5c85976bb5bd275d5233a93f7518f886d35b5c"
+}

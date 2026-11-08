@@ -1,0 +1,27 @@
+{
+  "experiment_id": "experiment-s0_baseline-16ecc53da404",
+  "created_at": "2026-11-08T16:46:04.412922+00:00",
+  "scenario": {
+    "scenario_id": "S0_BASELINE",
+    "description": "Demande nominale sans absence ni fermeture supplémentaire.",
+    "demand_multiplier": 1.0,
+    "absence_rate": 0.0,
+    "capacity_reduction": 0.0,
+    "service_multipliers": {},
+    "peak_days": null
+  },
+  "seed": 42,
+  "scenario_input_hash": "16ecc53da404ff55d4a9e575c5fc36fb7b5c4001a83c2e46851e573f6cda9247",
+  "methods": [
+    "greedy"
+  ],
+  "method_artifacts": {
+    "greedy": {
+      "bed_allocations": "results\\experiments\\experiment-s0_baseline-16ecc53da404\\greedy\\bed_allocations.csv",
+      "staff_assignments": "results\\experiments\\experiment-s0_baseline-16ecc53da404\\greedy\\staff_assignments.csv",
+      "staff_coverage": "results\\experiments\\experiment-s0_baseline-16ecc53da404\\greedy\\staff_coverage.csv",
+      "planning_availability": "results\\experiments\\experiment-s0_baseline-16ecc53da404\\greedy\\planning_availability.csv",
+      "method_result": "results\\experiments\\experiment-s0_baseline-16ecc53da404\\greedy\\method_result.json"
+    }
+  }
+}
